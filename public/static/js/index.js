@@ -15,7 +15,7 @@ generateButton.addEventListener('click',()=>{
   fetch(url)
   .then((response) => response.json())
       .then((json) => {
-          output.value = json.urls[id];
+          output.value = json.id;
       });
       
 });
