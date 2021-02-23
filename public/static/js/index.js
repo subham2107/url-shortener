@@ -5,14 +5,15 @@ const resetButton=document.querySelector('#reset-button');
 
 
 generateButton.addEventListener('click',()=>{
-  const url = new URL('http://localhost:3000/api/urls/post');
-  const param = { long_url: input.value};
-  Object.keys(param).forEach((key) => {
-      url.searchParams.append(key, param[key]);
-  });
-  url.search = new URLSearchParams(param).toString();
-  
-  fetch(url)
+    fetch('./api/urls/', {
+        method: 'POST',
+        body: JSON.stringify({
+            long_url: input.value,
+        }),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        }
+    })
   .then((response) => response.json())
       .then((json) => {
           output.value = json.id;
