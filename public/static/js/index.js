@@ -1,10 +1,10 @@
 const input=document.querySelector('#input');
 const output=document.querySelector('#output');
-const generateButton=document.querySelector('#generate-button');
-const resetButton=document.querySelector('#reset-button');
+const shortenButton=document.querySelector('#shorten-button');
+const copyButton=document.querySelector('#copy-button');
 
 
-generateButton.addEventListener('click',()=>{
+shortenButton.addEventListener('click',()=>{
     fetch('./api/urls/', {
         method: 'POST',
         body: JSON.stringify({
@@ -16,12 +16,13 @@ generateButton.addEventListener('click',()=>{
     })
   .then((response) => response.json())
       .then((json) => {
-          output.value = json.id;
+          output.value = `${input.value}/u/${json.id}`;
+          copyButton.addEventListener('click',()=>{
+            const copyText = document.querySelector('#output');
+            copyText.select();
+            document.execCommand('copy');
+        });
       });
       
 });
 
-resetButton.addEventListener('click',()=>{
-    input.value="";
-    output.value="";
-    });

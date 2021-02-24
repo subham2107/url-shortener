@@ -1,0 +1,40 @@
+body{
+  margin:0;
+  background-color: #f6f8fa;
+  font-family: 'Work Sans', sans-serif;
+  color:rgb(77, 80, 83);
+}
+
+
+#shorten-button {
+    background-color: #276ef1;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+        
+}
+
+#copy-button {
+  background-color: #41b10e;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  
+  }
+
+  .input-output{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
