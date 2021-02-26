@@ -16,7 +16,7 @@ shortenButton.addEventListener('click',()=>{
     })
   .then((response) => response.json())
       .then((json) => {
-          output.value = `${input.value}/u/${json.id}`;
+          output.value = `${document.location.origin}/u/${json.id}`;
           copyButton.addEventListener('click',()=>{
             const copyText = document.querySelector('#output');
             copyText.select();
