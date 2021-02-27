@@ -16,7 +16,7 @@
   <h1>URL SHORTENER</h1>
    
     <div>
-      <textarea type="text" id="input" placeholder="Enter the url."  rows="3" cols="30"></textarea>  
+      <textarea type="text" id="input" placeholder="Long URL"  rows="3" cols="60"></textarea>  
     </div>
 
     <div>
@@ -24,14 +24,23 @@
   </div>
 
      <div>   
-      <textarea type="text" id="output" placeholder="Your results." rows="3" cols="30" readonly></textarea>
+      <textarea type="text" id="output" placeholder="Shortened URL" rows="3" cols="60" readonly></textarea>
       </div>
 
       <div>
         <input type="button" id="copy-button" value= "Copy">
       </div>
 
-    </div> 
+      <div>
+        <input type="button" id="all-button" value= "All URLS">
+      </div>
+    </div>
+    
+    <hr style="max-width: 1050px;">
+
+    <div style=" margin: auto;max-width: 1000px;margin-bottom: 20px;" id="all-urls">
+
+    </div>
     
   
 </body>

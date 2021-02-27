@@ -6,29 +6,36 @@ body{
 }
 
 
-#shorten-button {
+#shorten-button,
+#all-button {
     background-color: #276ef1;
     color: #fff;
     font-size: 16px;
-    line-height: 1.4;
-    padding: 10px 30px;
+    line-height: 2; 
     border-radius: 3px;
     cursor: pointer;
     border: none;
     font-family: inherit;
-        
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 100px;
+    max-width: 100px;   
 }
 
 #copy-button {
   background-color: #41b10e;
   color: #fff;
   font-size: 16px;
-  line-height: 1.4;
-  padding: 10px 30px;
+  line-height: 2;
+  
   border-radius: 3px;
   cursor: pointer;
   border: none;
   font-family: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-width: 100px;
+    max-width: 100px;
   
   }
 

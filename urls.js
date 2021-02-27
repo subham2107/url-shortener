@@ -3,12 +3,12 @@ const shortid=require('shortid');
 
 const router =express.Router();
 
-const urls={};
+const  { urls }  = require('./urls_data');
 
 router.get('/',(req,res)=>{
   const urlList=[];
   Object.keys(urls).forEach(urlId =>{
-    urlList.push({id:urlId,long_url:urls[urlId].long_url});
+    urlList.push({id:urlId,long_url:urls[urlId]});
   });
   res.send(urlList);
 });
@@ -36,18 +36,8 @@ router.get('/:id',(req,res)=>{
   }
 });
 
-router.get('/u/:id',(req,res)=>{
-  const id=req.params.id;
-  const long_url = urls[id];
-  if(long_url){
-      res.redirect(long_url);
-    }
-  else{
-    res.status(404).send({
-      "error":"Invalid short url id"
-    });
-  }
-});
+
+
 
 
 module.exports=router;
