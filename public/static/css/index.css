@@ -45,3 +45,66 @@ body{
     justify-content: center;
     align-items: center;
   }
+
+  textarea{
+    height: 25px;
+    width: 400px;
+    border-radius: 3px;
+  }
+
+  #all-urls{
+    margin: auto;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    text-align:left;
+    
+  }
+
+  @media screen and (max-width: 1011px) {
+    
+    #all-urls{
+      margin: auto;
+      max-width: 800px;    
+    }
+
+}
+
+@media screen and (max-width: 925px){
+
+  
+  #all-urls{
+    margin: auto;
+    max-width: 600px;    
+  }
+
+
+}
+
+
+
+ @media screen and (max-width: 655px) {
+
+
+  
+  #all-urls{
+      margin: auto;
+      max-width: 400px;    
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+
+  textarea{ 
+    width: 300px; 
+  }
+
+  
+  
+#all-urls{
+      margin: auto;
+      max-width: 300px;    
+    }
+
+}
+

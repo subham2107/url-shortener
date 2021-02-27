@@ -9,27 +9,29 @@ function isValidURL(string) {
     return (res !== null)
   };
 
+
 allButton.addEventListener('click',()=>{
-    
     fetch('./api/urls/')
     .then(response=>response.json())
     .then(urls => {
         const allUrls=document.querySelector('#all-urls');
+        const parentElement=document.createElement('div');
         urls.forEach(url =>{
             const element=document.createElement('div');
             element.innerText=`\nOriginal: ${url.long_url}\nShortened: ${document.location.origin}/u/${url.id}`;
-            allUrls.appendChild(element);
+            parentElement.appendChild(element);
         });
+        allUrls.innerHTML = parentElement.innerHTML;
     });
-      
+    
 });
-
 
 
 shortenButton.addEventListener('click',()=>{
 
     if(input.value.length===0 || isValidURL(input.value)===false)
     {
+        output.value="";
         alert('Please enter valid URL');
     }
 
@@ -56,6 +58,3 @@ shortenButton.addEventListener('click',()=>{
 }
 }
 );
-
-
-
