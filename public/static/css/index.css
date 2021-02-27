@@ -55,9 +55,7 @@ body{
   #all-urls{
     margin: auto;
     max-width: 1000px;
-    margin-bottom: 20px;
-    text-align:left;
-    
+    text-align: center;
   }
 
   @media screen and (max-width: 1011px) {
@@ -103,8 +101,9 @@ body{
   
 #all-urls{
       margin: auto;
-      max-width: 300px;    
+      max-width: 350px;    
     }
 
 }
+
 

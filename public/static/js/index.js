@@ -18,7 +18,7 @@ allButton.addEventListener('click',()=>{
         const parentElement=document.createElement('div');
         urls.forEach(url =>{
             const element=document.createElement('div');
-            element.innerText=`\nOriginal: ${url.long_url}\nShortened: ${document.location.origin}/u/${url.id}`;
+            element.innerText=`\n\nOriginal: ${url.long_url}\nShortened: ${document.location.origin}/u/${url.id}`;
             parentElement.appendChild(element);
         });
         allUrls.innerHTML = parentElement.innerHTML;
