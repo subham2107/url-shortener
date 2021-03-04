@@ -1,2 +1,2 @@
 # url-shortener
-Check it out here: https://tinifyy.herokuapp.com/
+You can check it out here: https://tinifyy.herokuapp.com/
