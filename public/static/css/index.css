@@ -65,6 +65,24 @@ body{
     
   }
 
+  .footer-wrapper{
+    min-height: 45px;
+  }
+
+  .non-footer {
+    min-height: calc(100vh - 17px);
+  }
+
+  .footer-logo{
+    padding-bottom: 10px;
+  }
+
+  .footer-logo img{
+    height: 40px;
+    width: 40px;
+  }
+
+
   /*
   @media screen and (max-width: 1011px) {
     
