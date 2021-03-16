@@ -62,6 +62,7 @@ body{
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
+    width: calc(100vw - 100px);
     
   }
 
@@ -189,8 +190,6 @@ body{
   #all-urls{
     margin-left: 70px;
     margin-right: 50px;
-    min-width: 250px;
-    max-width: 250px;
     }
 
 }
