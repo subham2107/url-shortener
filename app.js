@@ -18,7 +18,7 @@ app.get('/u/:id',(req,res)=>{
     }
   else{
     res.status(404).send({
-      "error":"Invalid url"
+      "error":"Invalid URL"
     });
   }
 });
