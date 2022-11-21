@@ -1,2 +1,2 @@
 # url-shortener
-Check it out here: https://tinifyy.herokuapp.com/
+Check it out here: https://bytely.onrender.com
